@@ -49,9 +49,6 @@ RUN chmod 0755 bin/rails bin/bundle bin/rake
 # bundle install (production)
 RUN bundle install --without development test
 
-# set environment
-ENV RAILS_ENV production
-
 # to enable nano command in container
 ENV TERM xterm
 
